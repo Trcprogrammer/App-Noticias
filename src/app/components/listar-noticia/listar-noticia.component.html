@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-md-2 g-4"    >
+    <div class="col"   *ngFor="let noticia of noticias"   >
+      <div class="card my-3  "  >
+        <div class="card-body">
+          <h5 class="card-title">{{noticia.title}}</h5>
+          <span class="badge badge-danger " style="font-size: 10px;" > {{noticia.author}} </span>
+          <button class="btn btn-block btn-primary " ><a [href]="noticia.url">Ver mas</a></button>
+        </div>
+      </div>
+    </div>
+    
+  </div>

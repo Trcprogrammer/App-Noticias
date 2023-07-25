@@ -1,0 +1,14 @@
+<app-navbar [titulo]="'APP-NOTICIAS'"></app-navbar>
+
+<div class="container">
+  <app-formulario  (objeto)="buscarContenido($event)" ></app-formulario>
+  <app-spinner  *ngIf="spinner === true" ></app-spinner>
+  <app-listar-noticia [noticias]="informacion"></app-listar-noticia>
+
+</div>
+
+
+
+
+<router-outlet></router-outlet>
+ 
